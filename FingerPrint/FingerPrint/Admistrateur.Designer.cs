@@ -126,6 +126,8 @@
             this.GBX_ListeAdmin = new System.Windows.Forms.GroupBox();
             this.DGV_ListeAdmin = new System.Windows.Forms.DataGridView();
             this.GBX_FormAdmin = new System.Windows.Forms.GroupBox();
+            this.CBX_TypeUtilisateur = new System.Windows.Forms.ComboBox();
+            this.LBL_TypeUtilisateur = new System.Windows.Forms.Label();
             this.TXB_MotDePasseAdmin = new System.Windows.Forms.TextBox();
             this.LBL_MotDePasseAdmin = new System.Windows.Forms.Label();
             this.TXB_LoginAdmin = new System.Windows.Forms.TextBox();
@@ -195,8 +197,6 @@
             this.BTN_Rapports = new System.Windows.Forms.Button();
             this.BTN_Horaires = new System.Windows.Forms.Button();
             this.BTN_EtatReseau = new System.Windows.Forms.Button();
-            this.LBL_TypeUtilisateur = new System.Windows.Forms.Label();
-            this.CBX_TypeUtilisateur = new System.Windows.Forms.ComboBox();
             this.TCL_Admin.SuspendLayout();
             this.TPG_Professeur.SuspendLayout();
             this.GBX_RechercheProf.SuspendLayout();
@@ -1187,6 +1187,26 @@
             this.GBX_FormAdmin.TabStop = false;
             this.GBX_FormAdmin.Text = "Formulaire Administrateur";
             // 
+            // CBX_TypeUtilisateur
+            // 
+            this.CBX_TypeUtilisateur.FormattingEnabled = true;
+            this.CBX_TypeUtilisateur.Items.AddRange(new object[] {
+            "Administrateur",
+            "Cordonateur"});
+            this.CBX_TypeUtilisateur.Location = new System.Drawing.Point(289, 64);
+            this.CBX_TypeUtilisateur.Name = "CBX_TypeUtilisateur";
+            this.CBX_TypeUtilisateur.Size = new System.Drawing.Size(123, 21);
+            this.CBX_TypeUtilisateur.TabIndex = 9;
+            // 
+            // LBL_TypeUtilisateur
+            // 
+            this.LBL_TypeUtilisateur.AutoSize = true;
+            this.LBL_TypeUtilisateur.Location = new System.Drawing.Point(305, 35);
+            this.LBL_TypeUtilisateur.Name = "LBL_TypeUtilisateur";
+            this.LBL_TypeUtilisateur.Size = new System.Drawing.Size(80, 13);
+            this.LBL_TypeUtilisateur.TabIndex = 8;
+            this.LBL_TypeUtilisateur.Text = "Type Utilisateur";
+            // 
             // TXB_MotDePasseAdmin
             // 
             this.TXB_MotDePasseAdmin.Location = new System.Drawing.Point(555, 75);
@@ -1745,6 +1765,7 @@
             this.BTN_EnregistrerMatProf.TabIndex = 15;
             this.BTN_EnregistrerMatProf.Text = "Enregistrer";
             this.BTN_EnregistrerMatProf.UseVisualStyleBackColor = true;
+            this.BTN_EnregistrerMatProf.Click += new System.EventHandler(this.BTN_EnregistrerMatProf_Click);
             // 
             // GBX_RechMatiereProf
             // 
@@ -1835,26 +1856,6 @@
             this.BTN_EtatReseau.TabIndex = 5;
             this.BTN_EtatReseau.Text = "Etat du Reseau";
             this.BTN_EtatReseau.UseVisualStyleBackColor = true;
-            // 
-            // LBL_TypeUtilisateur
-            // 
-            this.LBL_TypeUtilisateur.AutoSize = true;
-            this.LBL_TypeUtilisateur.Location = new System.Drawing.Point(305, 35);
-            this.LBL_TypeUtilisateur.Name = "LBL_TypeUtilisateur";
-            this.LBL_TypeUtilisateur.Size = new System.Drawing.Size(80, 13);
-            this.LBL_TypeUtilisateur.TabIndex = 8;
-            this.LBL_TypeUtilisateur.Text = "Type Utilisateur";
-            // 
-            // CBX_TypeUtilisateur
-            // 
-            this.CBX_TypeUtilisateur.FormattingEnabled = true;
-            this.CBX_TypeUtilisateur.Items.AddRange(new object[] {
-            "Administrateur",
-            "Cordonateur"});
-            this.CBX_TypeUtilisateur.Location = new System.Drawing.Point(289, 64);
-            this.CBX_TypeUtilisateur.Name = "CBX_TypeUtilisateur";
-            this.CBX_TypeUtilisateur.Size = new System.Drawing.Size(123, 21);
-            this.CBX_TypeUtilisateur.TabIndex = 9;
             // 
             // Admistrateur
             // 
